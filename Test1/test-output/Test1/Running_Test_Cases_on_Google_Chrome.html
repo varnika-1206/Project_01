@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>TestNG:  Running_Test_Cases_on_Google_Chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Running_Test_Cases_on_Google_Chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 08 01:13:57 EST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>59 seconds (59049 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>functest </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TemSocGFTest.PollPage10_Question11()'><b>PollPage10_Question11</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>4</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage10_Question12()'><b>PollPage10_Question12</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>1</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage10_SubmitButton()'><b>PollPage10_SubmitButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>2</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage11_ContinueButton()'><b>PollPage11_ContinueButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage1_Question1()'><b>PollPage1_Question1</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>2</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage1_Question2()'><b>PollPage1_Question2</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>2</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage1_Question3()'><b>PollPage1_Question3</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>1</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage1_SubmitButton()'><b>PollPage1_SubmitButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>1</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage2_ContinueButton()'><b>PollPage2_ContinueButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage2_VerifyResults()'><b>PollPage2_VerifyResults</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage3_Question4()'><b>PollPage3_Question4</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage3_Question5()'><b>PollPage3_Question5</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage3_SubmitButton()'><b>PollPage3_SubmitButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>2</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage4_ContinueButton()'><b>PollPage4_ContinueButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage4_VerifyResults()'><b>PollPage4_VerifyResults</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage5_Question6()'><b>PollPage5_Question6</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>1</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage6_Question7()'><b>PollPage6_Question7</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>1</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage6_Question8()'><b>PollPage6_Question8</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>2</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage6_Question9()'><b>PollPage6_Question9</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>3</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage6_SubmitButton()'><b>PollPage6_SubmitButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>2</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage7_ContinueButton()'><b>PollPage7_ContinueButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage7_VerifyResults()'><b>PollPage7_VerifyResults</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage8_Question10()'><b>PollPage8_Question10</b><br>Test class: TemSocGFTest<br>Parameters: Google_Chrome</td>
+<td></td>
+<td>3</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage8_SubmitButton()'><b>PollPage8_SubmitButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>2</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+<tr>
+<td title='TemSocGFTest.PollPage9_ContinueButton()'><b>PollPage9_ContinueButton</b><br>Test class: TemSocGFTest</td>
+<td></td>
+<td>0</td>
+<td>TemSocGFTest@14acaea5</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test1]" parallel="tests">
+  <parameter name="Browser_Type" value="Google_Chrome"/>
+  <test name="Running_Test_Cases_on_Google_Chrome(failed)" parallel="tests">
+    <parameter name="Browser_Type" value="Google_Chrome"/>
+    <groups>
+      <run>
+        <include name="functest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TemSocGFTest">
+        <methods>
+          <include name="close_browser"/>
+          <include name="PollPage6_SubmitButton"/>
+          <include name="Log_In"/>
+        </methods>
+      </class> <!-- TemSocGFTest -->
+    </classes>
+  </test> <!-- Running_Test_Cases_on_Google_Chrome(failed) -->
+</suite> <!-- Failed suite [Test1] -->

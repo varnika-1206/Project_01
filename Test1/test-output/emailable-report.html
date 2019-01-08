@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Running_Test_Cases_on_Google_Chrome</td><td class="numi">25</td><td class="numi">25</td><td class="numi">0</td><td class="numi">0</td><td class="numi">59.0 seconds</td><td class="numi">functest </td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Running_Test_Cases_on_Google_Chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="25">TemSocGFTest</td><td><a href="#m1"><b>PollPage10_Question11</b> (functest) </a></td><td class="numi">1</td><td>1546928086540</td><td class="numi">4567</td></tr><tr class="passedodd"><td><a href="#m2"><b>PollPage10_Question12</b> (functest) </a></td><td class="numi">1</td><td>1546928091111</td><td class="numi">1015</td></tr><tr class="passedodd"><td><a href="#m3"><b>PollPage10_SubmitButton</b> (functest) </a></td><td class="numi">1</td><td>1546928092128</td><td class="numi">2365</td></tr><tr class="passedodd"><td><a href="#m4"><b>PollPage11_ContinueButton</b> (functest) </a></td><td class="numi">1</td><td>1546928094497</td><td class="numi">511</td></tr><tr class="passedodd"><td><a href="#m5"><b>PollPage1_Question1</b> (functest) </a></td><td class="numi">1</td><td>1546928050947</td><td class="numi">2908</td></tr><tr class="passedodd"><td><a href="#m6"><b>PollPage1_Question2</b> (functest) </a></td><td class="numi">1</td><td>1546928053860</td><td class="numi">2803</td></tr><tr class="passedodd"><td><a href="#m7"><b>PollPage1_Question3</b> (functest) </a></td><td class="numi">1</td><td>1546928056667</td><td class="numi">1524</td></tr><tr class="passedodd"><td><a href="#m8"><b>PollPage1_SubmitButton</b> (functest) </a></td><td class="numi">1</td><td>1546928058197</td><td class="numi">1529</td></tr><tr class="passedodd"><td><a href="#m9"><b>PollPage2_ContinueButton</b> (functest) </a></td><td class="numi">1</td><td>1546928060114</td><td class="numi">271</td></tr><tr class="passedodd"><td><a href="#m10"><b>PollPage2_VerifyResults</b> (functest) </a></td><td class="numi">1</td><td>1546928059729</td><td class="numi">382</td></tr><tr class="passedodd"><td><a href="#m11"><b>PollPage3_Question4</b> (functest) </a></td><td class="numi">1</td><td>1546928060389</td><td class="numi">471</td></tr><tr class="passedodd"><td><a href="#m12"><b>PollPage3_Question5</b> (functest) </a></td><td class="numi">1</td><td>1546928060863</td><td class="numi">439</td></tr><tr class="passedodd"><td><a href="#m13"><b>PollPage3_SubmitButton</b> (functest) </a></td><td class="numi">1</td><td>1546928061305</td><td class="numi">2506</td></tr><tr class="passedodd"><td><a href="#m14"><b>PollPage4_ContinueButton</b> (functest) </a></td><td class="numi">1</td><td>1546928064630</td><td class="numi">654</td></tr><tr class="passedodd"><td><a href="#m15"><b>PollPage4_VerifyResults</b> (functest) </a></td><td class="numi">1</td><td>1546928063816</td><td class="numi">810</td></tr><tr class="passedodd"><td><a href="#m16"><b>PollPage5_Question6</b> (functest) </a></td><td class="numi">1</td><td>1546928065289</td><td class="numi">1742</td></tr><tr class="passedodd"><td><a href="#m17"><b>PollPage6_Question7</b> (functest) </a></td><td class="numi">1</td><td>1546928067035</td><td class="numi">1140</td></tr><tr class="passedodd"><td><a href="#m18"><b>PollPage6_Question8</b> (functest) </a></td><td class="numi">1</td><td>1546928068179</td><td class="numi">2869</td></tr><tr class="passedodd"><td><a href="#m19"><b>PollPage6_Question9</b> (functest) </a></td><td class="numi">1</td><td>1546928071051</td><td class="numi">3550</td></tr><tr class="passedodd"><td><a href="#m20"><b>PollPage6_SubmitButton</b> (functest) </a></td><td class="numi">1</td><td>1546928074606</td><td class="numi">2953</td></tr><tr class="passedodd"><td><a href="#m21"><b>PollPage7_ContinueButton</b> (functest) </a></td><td class="numi">1</td><td>1546928078389</td><td class="numi">702</td></tr><tr class="passedodd"><td><a href="#m22"><b>PollPage7_VerifyResults</b> (functest) </a></td><td class="numi">1</td><td>1546928077563</td><td class="numi">822</td></tr><tr class="passedodd"><td><a href="#m23"><b>PollPage8_Question10</b> (functest) </a></td><td class="numi">1</td><td>1546928079095</td><td class="numi">3959</td></tr><tr class="passedodd"><td><a href="#m24"><b>PollPage8_SubmitButton</b> (functest) </a></td><td class="numi">1</td><td>1546928083059</td><td class="numi">2972</td></tr><tr class="passedodd"><td><a href="#m25"><b>PollPage9_ContinueButton</b> (functest) </a></td><td class="numi">1</td><td>1546928086035</td><td class="numi">502</td></tr>
+</table>
+<h1>Running_Test_Cases_on_Google_Chrome</h1>
+<h2 id="m1">TemSocGFTest:PollPage10_Question12</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">TemSocGFTest:PollPage3_SubmitButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">TemSocGFTest:PollPage10_SubmitButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">TemSocGFTest:PollPage7_ContinueButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">TemSocGFTest:PollPage2_VerifyResults</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">TemSocGFTest:PollPage2_ContinueButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">TemSocGFTest:PollPage3_Question5</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">TemSocGFTest:PollPage1_Question3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">TemSocGFTest:PollPage8_SubmitButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">TemSocGFTest:PollPage3_Question4</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">TemSocGFTest:PollPage1_SubmitButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">TemSocGFTest:PollPage6_Question7</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">TemSocGFTest:PollPage1_Question2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">TemSocGFTest:PollPage5_Question6</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">TemSocGFTest:PollPage9_ContinueButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">TemSocGFTest:PollPage1_Question1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">TemSocGFTest:PollPage6_Question8</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">TemSocGFTest:PollPage6_Question9</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">TemSocGFTest:PollPage10_Question11</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">TemSocGFTest:PollPage4_ContinueButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">TemSocGFTest:PollPage8_Question10</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Google_Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">TemSocGFTest:PollPage11_ContinueButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">TemSocGFTest:PollPage6_SubmitButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">TemSocGFTest:PollPage7_VerifyResults</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">TemSocGFTest:PollPage4_VerifyResults</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

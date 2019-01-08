@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="25" passed="25">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test1" duration-ms="59049" started-at="2019-01-08T06:13:57Z" finished-at="2019-01-08T06:14:56Z">
+    <groups>
+      <group name="functest">
+        <method signature="TemSocGFTest.PollPage10_Question11(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage10_Question11" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage10_Question12(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage10_Question12" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage10_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage10_SubmitButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage11_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage11_ContinueButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage1_Question1(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_Question1" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage1_Question2(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_Question2" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage1_Question3(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_Question3" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage1_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_SubmitButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage2_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage2_ContinueButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage2_VerifyResults()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage2_VerifyResults" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage3_Question4(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage3_Question4" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage3_Question5(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage3_Question5" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage3_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage3_SubmitButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage4_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage4_ContinueButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage4_VerifyResults()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage4_VerifyResults" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage5_Question6(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage5_Question6" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage6_Question7(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_Question7" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage6_Question8(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_Question8" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage6_Question9(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_Question9" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage6_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_SubmitButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage7_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage7_ContinueButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage7_VerifyResults()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage7_VerifyResults" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage8_Question10(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage8_Question10" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage8_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage8_SubmitButton" class="TemSocGFTest"/>
+        <method signature="TemSocGFTest.PollPage9_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage9_ContinueButton" class="TemSocGFTest"/>
+      </group> <!-- functest -->
+    </groups>
+    <test name="Running_Test_Cases_on_Google_Chrome" duration-ms="59049" started-at="2019-01-08T06:13:57Z" finished-at="2019-01-08T06:14:56Z">
+      <class name="TemSocGFTest">
+        <test-method status="PASS" signature="Log_In(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="Log_In" is-config="true" duration-ms="13094" started-at="2019-01-08T01:13:57Z" finished-at="2019-01-08T01:14:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Log_In -->
+        <test-method status="PASS" signature="PollPage1_Question1(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_Question1" duration-ms="2908" started-at="2019-01-08T01:14:10Z" finished-at="2019-01-08T01:14:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage1_Question1 -->
+        <test-method status="PASS" signature="PollPage1_Question2(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_Question2" duration-ms="2803" started-at="2019-01-08T01:14:13Z" finished-at="2019-01-08T01:14:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage1_Question2 -->
+        <test-method status="PASS" signature="PollPage1_Question3(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_Question3" duration-ms="1524" started-at="2019-01-08T01:14:16Z" finished-at="2019-01-08T01:14:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage1_Question3 -->
+        <test-method status="PASS" signature="PollPage1_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage1_SubmitButton" duration-ms="1529" started-at="2019-01-08T01:14:18Z" finished-at="2019-01-08T01:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage1_SubmitButton -->
+        <test-method status="PASS" signature="PollPage2_VerifyResults()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage2_VerifyResults" duration-ms="382" started-at="2019-01-08T01:14:19Z" finished-at="2019-01-08T01:14:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage2_VerifyResults -->
+        <test-method status="PASS" signature="PollPage2_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage2_ContinueButton" duration-ms="271" started-at="2019-01-08T01:14:20Z" finished-at="2019-01-08T01:14:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage2_ContinueButton -->
+        <test-method status="PASS" signature="PollPage3_Question4(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage3_Question4" duration-ms="471" started-at="2019-01-08T01:14:20Z" finished-at="2019-01-08T01:14:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage3_Question4 -->
+        <test-method status="PASS" signature="PollPage3_Question5(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage3_Question5" duration-ms="439" started-at="2019-01-08T01:14:20Z" finished-at="2019-01-08T01:14:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage3_Question5 -->
+        <test-method status="PASS" signature="PollPage3_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage3_SubmitButton" duration-ms="2506" started-at="2019-01-08T01:14:21Z" finished-at="2019-01-08T01:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage3_SubmitButton -->
+        <test-method status="PASS" signature="PollPage4_VerifyResults()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage4_VerifyResults" duration-ms="810" started-at="2019-01-08T01:14:23Z" finished-at="2019-01-08T01:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage4_VerifyResults -->
+        <test-method status="PASS" signature="PollPage4_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage4_ContinueButton" duration-ms="654" started-at="2019-01-08T01:14:24Z" finished-at="2019-01-08T01:14:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage4_ContinueButton -->
+        <test-method status="PASS" signature="PollPage5_Question6(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage5_Question6" duration-ms="1742" started-at="2019-01-08T01:14:25Z" finished-at="2019-01-08T01:14:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage5_Question6 -->
+        <test-method status="PASS" signature="PollPage6_Question7(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_Question7" duration-ms="1140" started-at="2019-01-08T01:14:27Z" finished-at="2019-01-08T01:14:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage6_Question7 -->
+        <test-method status="PASS" signature="PollPage6_Question8(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_Question8" duration-ms="2869" started-at="2019-01-08T01:14:28Z" finished-at="2019-01-08T01:14:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage6_Question8 -->
+        <test-method status="PASS" signature="PollPage6_Question9(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_Question9" duration-ms="3550" started-at="2019-01-08T01:14:31Z" finished-at="2019-01-08T01:14:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage6_Question9 -->
+        <test-method status="PASS" signature="PollPage6_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage6_SubmitButton" duration-ms="2953" started-at="2019-01-08T01:14:34Z" finished-at="2019-01-08T01:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage6_SubmitButton -->
+        <test-method status="PASS" signature="PollPage7_VerifyResults()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage7_VerifyResults" duration-ms="822" started-at="2019-01-08T01:14:37Z" finished-at="2019-01-08T01:14:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage7_VerifyResults -->
+        <test-method status="PASS" signature="PollPage7_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage7_ContinueButton" duration-ms="702" started-at="2019-01-08T01:14:38Z" finished-at="2019-01-08T01:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage7_ContinueButton -->
+        <test-method status="PASS" signature="PollPage8_Question10(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage8_Question10" duration-ms="3959" started-at="2019-01-08T01:14:39Z" finished-at="2019-01-08T01:14:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage8_Question10 -->
+        <test-method status="PASS" signature="PollPage8_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage8_SubmitButton" duration-ms="2972" started-at="2019-01-08T01:14:43Z" finished-at="2019-01-08T01:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage8_SubmitButton -->
+        <test-method status="PASS" signature="PollPage9_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage9_ContinueButton" duration-ms="502" started-at="2019-01-08T01:14:46Z" finished-at="2019-01-08T01:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage9_ContinueButton -->
+        <test-method status="PASS" signature="PollPage10_Question11(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage10_Question11" duration-ms="4567" started-at="2019-01-08T01:14:46Z" finished-at="2019-01-08T01:14:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage10_Question11 -->
+        <test-method status="PASS" signature="PollPage10_Question12(java.lang.String)[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage10_Question12" duration-ms="1015" started-at="2019-01-08T01:14:51Z" finished-at="2019-01-08T01:14:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google_Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage10_Question12 -->
+        <test-method status="PASS" signature="PollPage10_SubmitButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage10_SubmitButton" duration-ms="2365" started-at="2019-01-08T01:14:52Z" finished-at="2019-01-08T01:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage10_SubmitButton -->
+        <test-method status="PASS" signature="PollPage11_ContinueButton()[pri:0, instance:TemSocGFTest@14acaea5]" name="PollPage11_ContinueButton" duration-ms="511" started-at="2019-01-08T01:14:54Z" finished-at="2019-01-08T01:14:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PollPage11_ContinueButton -->
+        <test-method status="PASS" signature="close_browser()[pri:0, instance:TemSocGFTest@14acaea5]" name="close_browser" is-config="true" duration-ms="1830" started-at="2019-01-08T01:14:55Z" finished-at="2019-01-08T01:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- TemSocGFTest -->
+    </test> <!-- Running_Test_Cases_on_Google_Chrome -->
+  </suite> <!-- Test1 -->
+</testng-results>

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test1">
+              <span class="suite-name border-passed">Test1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test1">
+                    <span>C:\Users\Varnika Singh\eclipse-workspace\Test1\src\test\java\Data.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test1">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test1">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test1" class="hide-methods passed suite-Test1"> (hide)</a> <!-- hide-methods passed suite-Test1 -->
+                      <a href="#" panel-name="suite-Test1" class="show-methods passed suite-Test1"> (show)</a> <!-- show-methods passed suite-Test1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Test1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage10_Question11(Google_Chrome)">PollPage10_Question11(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage10_Question12(Google_Chrome)">PollPage10_Question12(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage10_SubmitButton">PollPage10_SubmitButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage11_ContinueButton">PollPage11_ContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage1_Question1(Google_Chrome)">PollPage1_Question1(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage1_Question2(Google_Chrome)">PollPage1_Question2(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage1_Question3(Google_Chrome)">PollPage1_Question3(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage1_SubmitButton">PollPage1_SubmitButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage2_ContinueButton">PollPage2_ContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage2_VerifyResults">PollPage2_VerifyResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage3_Question4(Google_Chrome)">PollPage3_Question4(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage3_Question5(Google_Chrome)">PollPage3_Question5(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage3_SubmitButton">PollPage3_SubmitButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage4_ContinueButton">PollPage4_ContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage4_VerifyResults">PollPage4_VerifyResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage5_Question6(Google_Chrome)">PollPage5_Question6(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage6_Question7(Google_Chrome)">PollPage6_Question7(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage6_Question8(Google_Chrome)">PollPage6_Question8(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage6_Question9(Google_Chrome)">PollPage6_Question9(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage6_SubmitButton">PollPage6_SubmitButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage7_ContinueButton">PollPage7_ContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage7_VerifyResults">PollPage7_VerifyResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage8_Question10(Google_Chrome)">PollPage8_Question10(Google_Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage8_SubmitButton">PollPage8_SubmitButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test1" title="TemSocGFTest" hash-for-method="PollPage9_ContinueButton">PollPage9_ContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test1" class="panel Test1">
+          <div class="suite-Test1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TemSocGFTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage10_Question11(Google_Chrome)">
+                  </a> <!-- PollPage10_Question11(Google_Chrome) -->
+                  <span class="method-name">PollPage10_Question11</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage10_Question12(Google_Chrome)">
+                  </a> <!-- PollPage10_Question12(Google_Chrome) -->
+                  <span class="method-name">PollPage10_Question12</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage10_SubmitButton">
+                  </a> <!-- PollPage10_SubmitButton -->
+                  <span class="method-name">PollPage10_SubmitButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage11_ContinueButton">
+                  </a> <!-- PollPage11_ContinueButton -->
+                  <span class="method-name">PollPage11_ContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage1_Question1(Google_Chrome)">
+                  </a> <!-- PollPage1_Question1(Google_Chrome) -->
+                  <span class="method-name">PollPage1_Question1</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage1_Question2(Google_Chrome)">
+                  </a> <!-- PollPage1_Question2(Google_Chrome) -->
+                  <span class="method-name">PollPage1_Question2</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage1_Question3(Google_Chrome)">
+                  </a> <!-- PollPage1_Question3(Google_Chrome) -->
+                  <span class="method-name">PollPage1_Question3</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage1_SubmitButton">
+                  </a> <!-- PollPage1_SubmitButton -->
+                  <span class="method-name">PollPage1_SubmitButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage2_ContinueButton">
+                  </a> <!-- PollPage2_ContinueButton -->
+                  <span class="method-name">PollPage2_ContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage2_VerifyResults">
+                  </a> <!-- PollPage2_VerifyResults -->
+                  <span class="method-name">PollPage2_VerifyResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage3_Question4(Google_Chrome)">
+                  </a> <!-- PollPage3_Question4(Google_Chrome) -->
+                  <span class="method-name">PollPage3_Question4</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage3_Question5(Google_Chrome)">
+                  </a> <!-- PollPage3_Question5(Google_Chrome) -->
+                  <span class="method-name">PollPage3_Question5</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage3_SubmitButton">
+                  </a> <!-- PollPage3_SubmitButton -->
+                  <span class="method-name">PollPage3_SubmitButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage4_ContinueButton">
+                  </a> <!-- PollPage4_ContinueButton -->
+                  <span class="method-name">PollPage4_ContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage4_VerifyResults">
+                  </a> <!-- PollPage4_VerifyResults -->
+                  <span class="method-name">PollPage4_VerifyResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage5_Question6(Google_Chrome)">
+                  </a> <!-- PollPage5_Question6(Google_Chrome) -->
+                  <span class="method-name">PollPage5_Question6</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage6_Question7(Google_Chrome)">
+                  </a> <!-- PollPage6_Question7(Google_Chrome) -->
+                  <span class="method-name">PollPage6_Question7</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage6_Question8(Google_Chrome)">
+                  </a> <!-- PollPage6_Question8(Google_Chrome) -->
+                  <span class="method-name">PollPage6_Question8</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage6_Question9(Google_Chrome)">
+                  </a> <!-- PollPage6_Question9(Google_Chrome) -->
+                  <span class="method-name">PollPage6_Question9</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage6_SubmitButton">
+                  </a> <!-- PollPage6_SubmitButton -->
+                  <span class="method-name">PollPage6_SubmitButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage7_ContinueButton">
+                  </a> <!-- PollPage7_ContinueButton -->
+                  <span class="method-name">PollPage7_ContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage7_VerifyResults">
+                  </a> <!-- PollPage7_VerifyResults -->
+                  <span class="method-name">PollPage7_VerifyResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage8_Question10(Google_Chrome)">
+                  </a> <!-- PollPage8_Question10(Google_Chrome) -->
+                  <span class="method-name">PollPage8_Question10</span>
+                  <span class="parameters">(Google_Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage8_SubmitButton">
+                  </a> <!-- PollPage8_SubmitButton -->
+                  <span class="method-name">PollPage8_SubmitButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PollPage9_ContinueButton">
+                  </a> <!-- PollPage9_ContinueButton -->
+                  <span class="method-name">PollPage9_ContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test1-class-passed -->
+        </div> <!-- panel Test1 -->
+        <div panel-name="test-xml-Test1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Varnika Singh\eclipse-workspace\Test1\src\test\java\Data.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Test1&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Running_Test_Cases_on_Google_Chrome&quot;&gt;
+    &lt;parameter name=&quot;Browser_Type&quot; value=&quot;Google_Chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;functest&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TemSocGFTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Running_Test_Cases_on_Google_Chrome --&gt;
+&lt;/suite&gt; &lt;!-- Test1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Running_Test_Cases_on_Google_Chrome (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">functest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage10_Question11</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage10_Question12</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage10_SubmitButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage11_ContinueButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage1_Question1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage1_Question2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage1_Question3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage1_SubmitButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage2_ContinueButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage2_VerifyResults</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage3_Question4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage3_Question5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage3_SubmitButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage4_ContinueButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage4_VerifyResults</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage5_Question6</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage6_Question7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage6_Question8</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage6_Question9</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage6_SubmitButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage7_ContinueButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage7_VerifyResults</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage8_Question10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage8_SubmitButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PollPage9_ContinueButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test1');
+function tableData_Test1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'PollPage10_Question11')
+data.setCell(0, 2, 'TemSocGFTest')
+data.setCell(0, 3, 4567);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'PollPage8_Question10')
+data.setCell(1, 2, 'TemSocGFTest')
+data.setCell(1, 3, 3959);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'PollPage6_Question9')
+data.setCell(2, 2, 'TemSocGFTest')
+data.setCell(2, 3, 3550);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PollPage8_SubmitButton')
+data.setCell(3, 2, 'TemSocGFTest')
+data.setCell(3, 3, 2972);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'PollPage6_SubmitButton')
+data.setCell(4, 2, 'TemSocGFTest')
+data.setCell(4, 3, 2953);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'PollPage1_Question1')
+data.setCell(5, 2, 'TemSocGFTest')
+data.setCell(5, 3, 2908);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'PollPage6_Question8')
+data.setCell(6, 2, 'TemSocGFTest')
+data.setCell(6, 3, 2869);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'PollPage1_Question2')
+data.setCell(7, 2, 'TemSocGFTest')
+data.setCell(7, 3, 2803);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'PollPage3_SubmitButton')
+data.setCell(8, 2, 'TemSocGFTest')
+data.setCell(8, 3, 2506);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'PollPage10_SubmitButton')
+data.setCell(9, 2, 'TemSocGFTest')
+data.setCell(9, 3, 2365);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'PollPage5_Question6')
+data.setCell(10, 2, 'TemSocGFTest')
+data.setCell(10, 3, 1742);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'PollPage1_SubmitButton')
+data.setCell(11, 2, 'TemSocGFTest')
+data.setCell(11, 3, 1529);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'PollPage1_Question3')
+data.setCell(12, 2, 'TemSocGFTest')
+data.setCell(12, 3, 1524);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'PollPage6_Question7')
+data.setCell(13, 2, 'TemSocGFTest')
+data.setCell(13, 3, 1140);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'PollPage10_Question12')
+data.setCell(14, 2, 'TemSocGFTest')
+data.setCell(14, 3, 1015);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'PollPage7_VerifyResults')
+data.setCell(15, 2, 'TemSocGFTest')
+data.setCell(15, 3, 822);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'PollPage4_VerifyResults')
+data.setCell(16, 2, 'TemSocGFTest')
+data.setCell(16, 3, 810);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'PollPage7_ContinueButton')
+data.setCell(17, 2, 'TemSocGFTest')
+data.setCell(17, 3, 702);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'PollPage4_ContinueButton')
+data.setCell(18, 2, 'TemSocGFTest')
+data.setCell(18, 3, 654);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'PollPage11_ContinueButton')
+data.setCell(19, 2, 'TemSocGFTest')
+data.setCell(19, 3, 511);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'PollPage9_ContinueButton')
+data.setCell(20, 2, 'TemSocGFTest')
+data.setCell(20, 3, 502);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'PollPage3_Question4')
+data.setCell(21, 2, 'TemSocGFTest')
+data.setCell(21, 3, 471);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'PollPage3_Question5')
+data.setCell(22, 2, 'TemSocGFTest')
+data.setCell(22, 3, 439);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'PollPage2_VerifyResults')
+data.setCell(23, 2, 'TemSocGFTest')
+data.setCell(23, 3, 382);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'PollPage2_ContinueButton')
+data.setCell(24, 2, 'TemSocGFTest')
+data.setCell(24, 3, 271);
+window.suiteTableData['Test1']= { tableData: data, tableDiv: 'times-div-Test1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <div id="times-div-Test1">
+              </div> <!-- times-div-Test1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TemSocGFTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Log_In(Google_Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">PollPage1_Question1(Google_Chrome)</span>
+                <span class="method-start">13136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage1_Question2(Google_Chrome)</span>
+                <span class="method-start">16049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage1_Question3(Google_Chrome)</span>
+                <span class="method-start">18856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage1_SubmitButton</span>
+                <span class="method-start">20386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage2_VerifyResults</span>
+                <span class="method-start">21918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage2_ContinueButton</span>
+                <span class="method-start">22303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage3_Question4(Google_Chrome)</span>
+                <span class="method-start">22578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage3_Question5(Google_Chrome)</span>
+                <span class="method-start">23052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage3_SubmitButton</span>
+                <span class="method-start">23494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage4_VerifyResults</span>
+                <span class="method-start">26005 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage4_ContinueButton</span>
+                <span class="method-start">26819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage5_Question6(Google_Chrome)</span>
+                <span class="method-start">27478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage6_Question7(Google_Chrome)</span>
+                <span class="method-start">29224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage6_Question8(Google_Chrome)</span>
+                <span class="method-start">30368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage6_Question9(Google_Chrome)</span>
+                <span class="method-start">33240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage6_SubmitButton</span>
+                <span class="method-start">36795 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage7_VerifyResults</span>
+                <span class="method-start">39752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage7_ContinueButton</span>
+                <span class="method-start">40578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage8_Question10(Google_Chrome)</span>
+                <span class="method-start">41284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage8_SubmitButton</span>
+                <span class="method-start">45248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage9_ContinueButton</span>
+                <span class="method-start">48224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage10_Question11(Google_Chrome)</span>
+                <span class="method-start">48729 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage10_Question12(Google_Chrome)</span>
+                <span class="method-start">53300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage10_SubmitButton</span>
+                <span class="method-start">54317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PollPage11_ContinueButton</span>
+                <span class="method-start">56686 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close_browser</span>
+                <span class="method-start">57205 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

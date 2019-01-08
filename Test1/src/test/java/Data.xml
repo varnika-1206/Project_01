@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name= "Test1" verbose="1" parallel= "tests">
+ 
+ <test name= "Running_Test_Cases_on_Google_Chrome">
+ 
+ <parameter name="Browser_Type" value="Google_Chrome"/>
+ <groups>
+            <run>
+               <include name="functest" />
+            </run>
+        </groups>
+ <classes>
+ 
+ <class name = "TemSocGFTest"/>
+
+ </classes>
+ </test>
+
+</suite>
