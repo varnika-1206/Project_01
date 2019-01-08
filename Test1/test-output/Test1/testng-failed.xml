@@ -6,7 +6,7 @@
     <parameter name="Browser_Type" value="Google_Chrome"/>
     <groups>
       <run>
-        <include name="functest"/>
+        <include name="To_Test"/>
       </run>
     </groups>
     <classes>
@@ -14,7 +14,31 @@
         <methods>
           <include name="close_browser"/>
           <include name="PollPage6_SubmitButton"/>
+          <include name="PollPage3_Question4" invocation-numbers="0"/>
+          <include name="PollPage3_Question5" invocation-numbers="0"/>
+          <include name="PollPage5_Question6" invocation-numbers="0"/>
+          <include name="PollPage3_SubmitButton"/>
+          <include name="PollPage4_VerifyResults"/>
           <include name="Log_In"/>
+          <include name="PollPage10_SubmitButton"/>
+          <include name="PollPage9_ContinueButton"/>
+          <include name="PollPage4_ContinueButton"/>
+          <include name="PollPage8_Question10" invocation-numbers="0"/>
+          <include name="PollPage1_Question1" invocation-numbers="0"/>
+          <include name="PollPage11_ContinueButton"/>
+          <include name="PollPage7_ContinueButton"/>
+          <include name="PollPage10_Question11" invocation-numbers="0"/>
+          <include name="PollPage1_SubmitButton"/>
+          <include name="PollPage2_VerifyResults"/>
+          <include name="PollPage6_Question8" invocation-numbers="0"/>
+          <include name="PollPage10_Question12" invocation-numbers="0"/>
+          <include name="PollPage2_ContinueButton"/>
+          <include name="PollPage1_Question3" invocation-numbers="0"/>
+          <include name="PollPage6_Question7" invocation-numbers="0"/>
+          <include name="PollPage8_SubmitButton"/>
+          <include name="PollPage1_Question2" invocation-numbers="0"/>
+          <include name="PollPage7_VerifyResults"/>
+          <include name="PollPage6_Question9" invocation-numbers="0"/>
         </methods>
       </class> <!-- TemSocGFTest -->
     </classes>

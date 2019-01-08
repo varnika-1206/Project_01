@@ -7,12 +7,13 @@
  <parameter name="Browser_Type" value="Google_Chrome"/>
  <groups>
             <run>
-               <include name="functest" />
+               <include name="To_Test" /> <!-- change or edit group name in .java file according to which ever test cases we want to run -->
             </run>
         </groups>
  <classes>
  
  <class name = "TemSocGFTest"/>
+
 
  </classes>
  </test>

@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TemSocGFTest {
 	
 	
-	public String TS_Url = "https://stage1-vote.pollstream.com/8610";
+	public String TS_Url = "https://stage1-vote.pollstream.com/8610";// accessing the respective URL
 	public  WebDriver driver; 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -28,7 +28,7 @@ public class TemSocGFTest {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
 	
-@BeforeTest(groups = { "functest" })
+@BeforeTest(groups = { "To_Test" })
 @Parameters ({"Browser_Type"})
 public void Log_In(String Browser_Type)
 //Before Test Method added to navigate to poll page 
@@ -42,10 +42,11 @@ driver = new ChromeDriver();
 }
 	      
 	     				  driver.get(TS_Url);   
-	     				  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	     				  
-	     			
-	     				  driver.findElement(By.xpath(("//*[@id='ps_form_PSPoll']/div[3]/input"))).click();
+	     				 
+	     				  WebDriverWait d=new WebDriverWait(driver,20);// wait for the page to load properly
+	     				 d.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='ps_form_PSPoll']/div[3]/input"))); 
+	     				 
+	     				 driver.findElement(By.xpath(("//*[@id='ps_form_PSPoll']/div[3]/input"))).click();
 				  
 }				  
 
@@ -53,7 +54,7 @@ driver = new ChromeDriver();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@AfterTest(groups = { "functest" })
+@AfterTest(groups = { "To_Test" })
 public void close_browser()
 {
 //Close the drivers after executing the test
@@ -65,18 +66,16 @@ driver.quit();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 					    
-@Test(priority = 1, groups = { "functest" })
+@Test(priority = 1, groups = { "To_Test" })
 @Parameters ({"Browser_Type"})
 public void PollPage1_Question1(String Browser_Type)
 
 {   
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
-
-	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
-
-	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+    System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+    System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 
 	//Checking for AnswerB CheckBox	
@@ -168,7 +167,7 @@ public void PollPage1_Question1(String Browser_Type)
 }
 
 
-@Test(priority = 2, groups = { "functest" })
+@Test(priority = 2, groups = { "To_Test" })
 @Parameters ({"Browser_Type"})
 public void PollPage1_Question2(String Browser_Type)
 
@@ -177,6 +176,8 @@ WebElement Q2 = driver.findElement(By.xpath("//*[@id='answer_id']"));
 Q2.click();	
 Select Q2_DropDown = new Select (driver.findElement(By.xpath("//*[@id='answer_id']")));
 Q2_DropDown.selectByVisibleText("Answer A");
+
+//Checking via selected visible text as it is a drop down
 
 WebElement Check_Q2 = driver.findElement(By.xpath("//*[@id=\"answer_id\"]/option[2]"));
 
@@ -277,14 +278,14 @@ System.out.println("////////////////////////////////////////////////////////////
 System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 }
 
-@Test(priority = 3, groups = { "functest" })
+@Test(priority = 3, groups = { "To_Test" })
 @Parameters ({"Browser_Type"})
 public void PollPage1_Question3(String Browser_Type)
 
 {  
 	
 	boolean Radio_Button_Selection_Status;
-	
+	//Checking via image text as this is a radio button
 	
 	WebElement Q3_OptionA = driver.findElement(By.xpath(("//*[@id=\"ps_answer_PSPoll_268831-prompt\"]")));
 	Q3_OptionA.click();
@@ -300,9 +301,9 @@ public void PollPage1_Question3(String Browser_Type)
 		System.out.println("Click function on Checkbox for choosing AnswerA failed");
 	}
 
-WebElement assert_Q3=driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268831-prompt\"]"));
+    WebElement assert_Q3=driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268831-prompt\"]"));
 
- Assert.assertEquals("Answer A", assert_Q3.getText());
+     Assert.assertEquals("Answer A", assert_Q3.getText());
 	
 	//System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	//System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -379,8 +380,8 @@ WebElement assert_Q3D=driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_26
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 }
 
-@Test(priority = 4, groups = { "functest" })
-public void PollPage1_SubmitButton()
+@Test(priority = 4, groups = { "To_Test" })
+public void PollPage1_SubmitButton()//clicking on submit button and verifying if we are landing on the proper page
 {
 driver.findElement(By.xpath("//*[@id=\"ps_form_PSPoll\"]/div[3]/input")).click();
 driver.findElement(By.xpath("//*[@id=\"ps-results-caption\"]")).click();
@@ -399,8 +400,8 @@ Assert.assertEquals("Results", driver.findElement(By.xpath("//*[@id=\"ps-results
 //System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 //System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 }
-@Test(priority = 5, groups = { "functest" })
-public void PollPage2_VerifyResults()
+@Test(priority = 5, groups = { "To_Test" })
+public void PollPage2_VerifyResults()//verifying if we have proper values in the poll results.
 {
 String V1_A = driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div[2]/div/div[2]/span")).getText();
 if(V1_A.isEmpty())
@@ -451,8 +452,8 @@ System.out.println("////////////////////////////////////////////////////////////
 
 }
 
-@Test(priority = 6, groups = { "functest" })
-public void PollPage2_ContinueButton()
+@Test(priority = 6, groups = { "To_Test" })
+public void PollPage2_ContinueButton()//clicking on Continue Button and verifying if we are landing on the correct page
 {
 driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div[3]/div[2]/input")).click();
 String Page3_Check = driver.findElement(By.xpath("//*[@id=\"question-79365-number\"]")).getText();
@@ -475,7 +476,7 @@ System.out.println("////////////////////////////////////////////////////////////
 System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 }
 
-@Test(priority = 7, groups = { "functest" })
+@Test(priority = 7, groups = { "To_Test" })
 @Parameters ({"Browser_Type"})
 public void PollPage3_Question4(String Browser_Type)
 
@@ -498,7 +499,7 @@ public void PollPage3_Question4(String Browser_Type)
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");	
 	}
 
-@Test(priority = 8, groups = { "functest" })
+@Test(priority = 8, groups = { "To_Test" })
 @Parameters ({"Browser_Type"})
 public void PollPage3_Question5(String Browser_Type)
 
@@ -521,8 +522,8 @@ public void PollPage3_Question5(String Browser_Type)
 	
 	}
 
-@Test(priority = 8, groups = { "functest" })
-public void PollPage3_SubmitButton()
+@Test(priority = 8, groups = { "To_Test" })
+public void PollPage3_SubmitButton()//Clicking o submit button and checking if we are landing on the correct page
 {
 driver.findElement(By.xpath("//*[@id=\"ps_form_PSPoll\"]/div[3]/input")).click();
 
@@ -551,8 +552,8 @@ System.out.println("////////////////////////////////////////////////////////////
 System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 }
 
-@Test(priority = 9, groups = { "functest" })
-public void PollPage4_VerifyResults()
+@Test(priority = 9, groups = { "To_Test" })
+public void PollPage4_VerifyResults()//checking if we are getting proper results on verify page
 {
 String V4_A = driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div[2]")).getText();
 if(V4_A.isEmpty())
@@ -601,8 +602,11 @@ System.out.println("////////////////////////////////////////////////////////////
 System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 }
-@Test(priority = 10, groups = { "functest" })
-public void PollPage4_ContinueButton()
+
+
+
+@Test(priority = 10, groups = { "To_Test" })
+public void PollPage4_ContinueButton()//clicking on continue button and making sure if are landing on the correct page
 {
 driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div[2]/div[2]/input")).click();
 String Page5_Check = driver.findElement(By.xpath("//*[@id=\"question-79368-number\"]")).getText();
@@ -627,7 +631,7 @@ System.out.println("////////////////////////////////////////////////////////////
 System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 }
 
-@Test(priority = 11, groups = { "functest" })
+@Test(priority = 11, groups = { "To_Test" })
 @Parameters ({"Browser_Type"})
 public void PollPage5_Question6(String Browser_Type)
 
@@ -636,6 +640,8 @@ public void PollPage5_Question6(String Browser_Type)
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268853-10\"]")).click();
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268854-5\"]")).click();
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268855-7\"]")).click();
+    
+    System.out.println("Inputs fed for Question 6");
     
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -646,7 +652,7 @@ public void PollPage5_Question6(String Browser_Type)
 }
 
     
-    @Test(priority = 12, groups = { "functest" })
+    @Test(priority = 12, groups = { "To_Test" })
     @Parameters ({"Browser_Type"})
     public void PollPage6_Question7(String Browser_Type)
 
@@ -657,6 +663,8 @@ public void PollPage5_Question6(String Browser_Type)
      driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268866-na\"]")).click();
      driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268867-8\"]")).click();
      
+     System.out.println("Inputs fed for Question 7");
+     
      System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 		System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 		System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -666,26 +674,28 @@ public void PollPage5_Question6(String Browser_Type)
     }
     
      
-    @Test(priority = 13, groups = { "functest" })
+    @Test(priority = 13, groups = { "To_Test" })
     @Parameters ({"Browser_Type"})
     public void PollPage6_Question8(String Browser_Type) 
     {
   
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268860\"]")).click();
-    Select Q7_DropDown1 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268860\"]")));
-    Q7_DropDown1.selectByVisibleText("4");
+    Select Q8_DropDown1 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268860\"]")));
+    Q8_DropDown1.selectByVisibleText("4");
     
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268861\"]")).click();
-    Select Q7_DropDown2 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268861\"]")));
-    Q7_DropDown2.selectByVisibleText("1");
+    Select Q8_DropDown2 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268861\"]")));
+    Q8_DropDown2.selectByVisibleText("1");
     
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268862\"]")).click();
-    Select Q7_DropDown3 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268862\"]")));
-    Q7_DropDown3.selectByVisibleText("10");
+    Select Q8_DropDown3 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268862\"]")));
+    Q8_DropDown3.selectByVisibleText("10");
     
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268863\"]")).click();
-    Select Q7_DropDown4 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268863\"]")));
-    Q7_DropDown4.selectByVisibleText("5");
+    Select Q8_DropDown4 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268863\"]")));
+    Q8_DropDown4.selectByVisibleText("5");
+    
+    System.out.println("Inputs fed for Question 8");
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -695,27 +705,29 @@ public void PollPage5_Question6(String Browser_Type)
     
     }
     
-    @Test(priority = 14, groups = { "functest" })
+    @Test(priority = 14, groups = { "To_Test" })
     @Parameters ({"Browser_Type"})
     public void PollPage6_Question9(String Browser_Type) 
     {
   
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268856\"]")).click();
-    Select Q8_DropDown1 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268856\"]")));
-    Q8_DropDown1.selectByVisibleText("1");
+    Select Q9_DropDown1 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268856\"]")));
+    Q9_DropDown1.selectByVisibleText("1");
     
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268857\"]")).click();
-    Select Q8_DropDown2 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268857\"]")));
-    Q8_DropDown2.selectByVisibleText("4");
+    Select Q9_DropDown2 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268857\"]")));
+    Q9_DropDown2.selectByVisibleText("4");
     
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268858\"]")).click();
-    Select Q8_DropDown3 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268858\"]")));
-    Q8_DropDown3.selectByVisibleText("5");
+    Select Q9_DropDown3 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268858\"]")));
+    Q9_DropDown3.selectByVisibleText("5");
     
     driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268859\"]")).click();
-    Select Q8_DropDown4 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268859\"]")));
-    Q8_DropDown4.selectByVisibleText("10");
+    Select Q9_DropDown4 = new Select (driver.findElement(By.xpath("//*[@id=\"ps_answer_PSPoll_268859\"]")));
+    Q9_DropDown4.selectByVisibleText("10");
     
+    
+    System.out.println("Inputs fed for Question 9");
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -724,8 +736,8 @@ public void PollPage5_Question6(String Browser_Type)
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");  
     }
     
-    @Test(priority = 15, groups = { "functest" })
-    public void PollPage6_SubmitButton()
+    @Test(priority = 15, groups = { "To_Test" })
+    public void PollPage6_SubmitButton()//Submit button checks
     {
     driver.findElement(By.xpath("//*[@id=\"ps_form_PSPoll\"]/div[3]/input")).click();
 
@@ -756,8 +768,8 @@ public void PollPage5_Question6(String Browser_Type)
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
     }
     
-    @Test(priority = 16, groups = { "functest" })
-    public void PollPage7_VerifyResults()
+    @Test(priority = 16, groups = { "To_Test" })
+    public void PollPage7_VerifyResults()//Verifying if correct results for Q-6,7,8,9 are captured
     {
     String V6_A = driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div[2]/div[2]/div[2]")).getText();
     if(V6_A.isEmpty())
@@ -807,8 +819,8 @@ public void PollPage5_Question6(String Browser_Type)
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
     }
     
-    @Test(priority = 17, groups = { "functest" })
-    public void PollPage7_ContinueButton()
+    @Test(priority = 17, groups = { "To_Test" })
+    public void PollPage7_ContinueButton()//Checks for Continue button 
     {
     driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div[4]/div[2]/input")).click();
     String Page7_Check = driver.findElement(By.xpath("//*[@id=\"question-79373-number\"]")).getText();
@@ -833,7 +845,7 @@ public void PollPage5_Question6(String Browser_Type)
 
     }
     
-    @Test(priority = 18, groups = { "functest" })
+    @Test(priority = 18, groups = { "To_Test" })
     @Parameters ({"Browser_Type"})
     public void PollPage8_Question10(String Browser_Type) 
     {
@@ -854,6 +866,8 @@ public void PollPage5_Question6(String Browser_Type)
     Select Q8_DropDown4 = new Select (driver.findElement(By.xpath("//*[@id=\"ans_:268872-1-select\"]")));
     Q8_DropDown4.selectByVisibleText("2");
     
+    System.out.println("Inputs fed for Question 8");
+    
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -862,8 +876,8 @@ public void PollPage5_Question6(String Browser_Type)
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"); 
     }
     
-    @Test(priority = 19, groups = { "functest" })
-    public void PollPage8_SubmitButton()
+    @Test(priority = 19, groups = { "To_Test" })
+    public void PollPage8_SubmitButton()//Submit button checks
     {
     driver.findElement(By.xpath("//*[@id=\"ps_form_PSPoll\"]/div[3]/input")).click();
 
@@ -894,8 +908,8 @@ public void PollPage5_Question6(String Browser_Type)
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
     }
     
-    @Test(priority = 20, groups = { "functest" })
-    public void PollPage9_ContinueButton()
+    @Test(priority = 20, groups = { "To_Test" })
+    public void PollPage9_ContinueButton()//clicking on continue button and checking if we are landing on correct page
     {
     driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div/div[3]/input")).click();
     String Page9_Check = driver.findElement(By.xpath("//*[@id=\"question-79374-number\"]")).getText();
@@ -920,7 +934,7 @@ public void PollPage5_Question6(String Browser_Type)
 
     }
     
-    @Test(priority = 21, groups = { "functest" })
+    @Test(priority = 21, groups = { "To_Test" })
     @Parameters ({"Browser_Type"})
     public void PollPage10_Question11(String Browser_Type) 
     {
@@ -941,6 +955,8 @@ public void PollPage5_Question6(String Browser_Type)
     Select Q8_DropDown4 = new Select (driver.findElement(By.xpath("//*[@id=\"ans_:268876-1-select\"]")));
     Q8_DropDown4.selectByVisibleText("2");
     
+    System.out.println("Inputs fed for Question 11");
+    
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
@@ -949,7 +965,7 @@ public void PollPage5_Question6(String Browser_Type)
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");   
     }
     
-    @Test(priority = 22, groups = { "functest" })
+    @Test(priority = 22, groups = { "To_Test" })
     @Parameters ({"Browser_Type"})
     public void PollPage10_Question12(String Browser_Type) 
     {
@@ -968,8 +984,8 @@ public void PollPage5_Question6(String Browser_Type)
 
 }
     
-    @Test(priority = 23, groups = { "functest" })
-    public void PollPage10_SubmitButton()
+    @Test(priority = 23, groups = { "To_Test" })
+    public void PollPage10_SubmitButton()//validating submit button click
     {
     driver.findElement(By.xpath("//*[@id=\"ps_form_PSPoll\"]/div[3]/input")).click();
 
@@ -1001,7 +1017,7 @@ public void PollPage5_Question6(String Browser_Type)
     }
     
     
-    @Test(priority = 24, groups = { "functest" })
+    @Test(priority = 24, groups = { "To_Test" })
     public void PollPage11_ContinueButton()
     {
     driver.findElement(By.xpath("//*[@id=\"PSPoll\"]/div/div/div[2]/div/div[3]/input")).click();
@@ -1015,7 +1031,8 @@ public void PollPage5_Question6(String Browser_Type)
     {
     	System.out.println("Continue Button 'not'Pressed Properly");
     }
-    Assert.assertEquals("a really short message -thanks", Page11_Check);
+    Assert.assertEquals("a really short message -thanks", Page11_Check);//verify the message at the end!
+    
     System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 	System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
